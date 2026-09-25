@@ -205,6 +205,20 @@ function DescriptionSection() {
           உருவாக்கப்பட்டுள்ளது. இதிலுள்ள மந்திரங்கள், எந்திரங்கள் மற்றும் சாதனை முறைகள் எளிய மற்றும் தெளிவான தமிழில்
           விளக்கப்பட்டுள்ளன, இதன் மூலம் எவரும் வீட்டில் இருந்தபடியே முறையான விதிகளைப் பின்பற்றி எளிதாகப் பயிற்சி செய்ய முடியும்.
         </p>
+        <div className="mt-8 flex flex-col items-center justify-center gap-3">
+          <a
+            href={CHECKOUT_URL}
+            className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine hover:btn-glow-hover"
+          >
+            <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+            இ-புத்தகத்தை இப்போதே பெறுங்கள் — ₹249
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </a>
+          <div className="flex items-center gap-2 text-xs text-white/60 font-medium">
+            <ShieldCheck className="h-4 w-4 text-[color:var(--accent)]" />
+            உடனடி பதிவிறக்கம் · பாதுகாப்பான கட்டணம்
+          </div>
+        </div>
       </Reveal>
     </SectionShell>
   );
@@ -241,6 +255,20 @@ function FeatureGallery() {
           </Reveal>
         ))}
       </div>
+      <Reveal className="mt-10 flex flex-col items-center justify-center gap-3 text-center">
+        <a
+          href={CHECKOUT_URL}
+          className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine pulse-glow hover:btn-glow-hover"
+        >
+          <Sparkles className="h-4 w-4 text-[color:var(--gold)]" />
+          அனைத்து ரகசிய முறைகளையும் கற்க — இப்போதே வாங்கவும் (₹249)
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </a>
+        <div className="flex items-center gap-2 text-xs text-white/60 font-medium">
+          <ShieldCheck className="h-4 w-4 text-[color:var(--accent)]" />
+          100% உடனடி அணுகல் · PDF வடிவில்
+        </div>
+      </Reveal>
     </SectionShell>
   );
 }
@@ -262,6 +290,20 @@ function LearnSection() {
               "புகைப்படம் மூலம் வசியம் செய்யும் ரகசிய தாந்திரீக செயல்முறை",
             ]}
           />
+          <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+            <a
+              href={CHECKOUT_URL}
+              className="group inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white btn-glow cta-shine hover:btn-glow-hover w-full sm:w-auto"
+            >
+              <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+              பயிற்சியைத் தொடங்குங்கள் — ₹249
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </a>
+            <span className="text-xs text-white/60 font-medium flex items-center gap-1.5">
+              <ShieldCheck className="h-4 w-4 text-[color:var(--accent)]" />
+              முழுமையான வழிகாட்டி PDF
+            </span>
+          </div>
         </div>
         <Reveal className="group relative overflow-hidden rounded-2xl border border-white/10 shadow-[var(--shadow-card)]">
           <img src={mantraImg} alt="Mantra" className="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-110" />
@@ -301,6 +343,17 @@ function IncludedSection() {
           </Reveal>
         ))}
       </div>
+      <Reveal className="mt-10 flex flex-col items-center justify-center gap-3 text-center">
+        <a
+          href={CHECKOUT_URL}
+          className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine pulse-glow hover:btn-glow-hover"
+        >
+          <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+          இந்த அனைத்து பலன்களையும் பெற — இப்போதே பதிவிறக்குங்கள்
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </a>
+        <p className="text-xs text-white/60 font-medium">ஒரே கட்டணம் ₹249 · வாழ்நாள் அணுகல்</p>
+      </Reveal>
     </SectionShell>
   );
 }
@@ -327,6 +380,20 @@ function AudienceSection() {
               "திருமண வாழ்க்கையில் மகிழ்ச்சியையும் அமைதியையும் மீண்டும் கொண்டுவர விரும்புபவர்கள்",
             ]}
           />
+          <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+            <a
+              href={CHECKOUT_URL}
+              className="group inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white btn-glow cta-shine hover:btn-glow-hover w-full sm:w-auto"
+            >
+              <Sparkles className="h-4 w-4 text-[color:var(--gold)]" />
+              இன்றே தொடங்குங்கள் — ₹249
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </a>
+            <span className="text-xs text-white/60 font-medium flex items-center gap-1.5">
+              <ShieldCheck className="h-4 w-4 text-[color:var(--accent)]" />
+              100% பாதுகாப்பானது மற்றும் ரகசியமானது
+            </span>
+          </div>
         </div>
       </div>
     </SectionShell>
@@ -359,6 +426,17 @@ function HighlightsSection() {
           </Reveal>
         ))}
       </div>
+      <Reveal className="mt-10 flex flex-col items-center justify-center gap-3 text-center">
+        <a
+          href={CHECKOUT_URL}
+          className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine pulse-glow hover:btn-glow-hover"
+        >
+          <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+          உடனடியாகப் படிக்கத் தொடங்குங்கள் — ₹249
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </a>
+        <span className="text-xs text-white/60 font-medium">பாதுகாப்பான கட்டண முறை · உடனடி மின்னஞ்சல் விநியோகம்</span>
+      </Reveal>
     </SectionShell>
   );
 }
@@ -379,6 +457,17 @@ function TestimonialsSection() {
           <Testimonial key={t.name} {...t} />
         ))}
       </div>
+      <Reveal className="mt-10 flex flex-col items-center justify-center gap-3 text-center">
+        <a
+          href={CHECKOUT_URL}
+          className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine hover:btn-glow-hover"
+        >
+          <Sparkles className="h-4 w-4 text-[color:var(--gold)]" />
+          நீங்களும் இன்றே பலன் பெறுங்கள் — ₹249
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </a>
+        <span className="text-xs text-white/60 font-medium">2000+ திருப்திகரமான சாதகர்கள் · 4.9/5 மதிப்பீடு</span>
+      </Reveal>
     </SectionShell>
   );
 }
