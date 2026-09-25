@@ -153,7 +153,7 @@ function Hero() {
               className="group inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white btn-glow cta-shine pulse-glow hover:btn-glow-hover"
             >
               <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-              இப்போதே பதிவிறக்குங்கள் — ₹249
+              இப்போதே பதிவிறக்குங்கள் — ₹349
             </a>
             <div className="flex items-center gap-2 text-xs text-white/60 font-medium">
               <ShieldCheck className="h-4 w-4 text-[color:var(--accent)]" />
@@ -211,7 +211,7 @@ function DescriptionSection() {
             className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine hover:btn-glow-hover"
           >
             <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-            இ-புத்தகத்தை இப்போதே பெறுங்கள் — ₹249
+            இ-புத்தகத்தை இப்போதே பெறுங்கள் — ₹349
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <div className="flex items-center gap-2 text-xs text-white/60 font-medium">
@@ -261,7 +261,7 @@ function FeatureGallery() {
           className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine pulse-glow hover:btn-glow-hover"
         >
           <Sparkles className="h-4 w-4 text-[color:var(--gold)]" />
-          அனைத்து ரகசிய முறைகளையும் கற்க — இப்போதே வாங்கவும் (₹249)
+          அனைத்து ரகசிய முறைகளையும் கற்க — இப்போதே வாங்கவும் (₹349)
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </a>
         <div className="flex items-center gap-2 text-xs text-white/60 font-medium">
@@ -296,7 +296,7 @@ function LearnSection() {
               className="group inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white btn-glow cta-shine hover:btn-glow-hover w-full sm:w-auto"
             >
               <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-              பயிற்சியைத் தொடங்குங்கள் — ₹249
+              பயிற்சியைத் தொடங்குங்கள் — ₹349
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <span className="text-xs text-white/60 font-medium flex items-center gap-1.5">
@@ -352,7 +352,7 @@ function IncludedSection() {
           இந்த அனைத்து பலன்களையும் பெற — இப்போதே பதிவிறக்குங்கள்
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </a>
-        <p className="text-xs text-white/60 font-medium">ஒரே கட்டணம் ₹249 · வாழ்நாள் அணுகல்</p>
+        <p className="text-xs text-white/60 font-medium">ஒரே கட்டணம் ₹349 · வாழ்நாள் அணுகல்</p>
       </Reveal>
     </SectionShell>
   );
@@ -386,7 +386,7 @@ function AudienceSection() {
               className="group inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-bold text-white btn-glow cta-shine hover:btn-glow-hover w-full sm:w-auto"
             >
               <Sparkles className="h-4 w-4 text-[color:var(--gold)]" />
-              இன்றே தொடங்குங்கள் — ₹249
+              இன்றே தொடங்குங்கள் — ₹349
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <span className="text-xs text-white/60 font-medium flex items-center gap-1.5">
@@ -432,7 +432,7 @@ function HighlightsSection() {
           className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine pulse-glow hover:btn-glow-hover"
         >
           <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-          உடனடியாகப் படிக்கத் தொடங்குங்கள் — ₹249
+          உடனடியாகப் படிக்கத் தொடங்குங்கள் — ₹349
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </a>
         <span className="text-xs text-white/60 font-medium">பாதுகாப்பான கட்டண முறை · உடனடி மின்னஞ்சல் விநியோகம்</span>
@@ -463,7 +463,7 @@ function TestimonialsSection() {
           className="group inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-sm font-bold text-white btn-glow cta-shine hover:btn-glow-hover"
         >
           <Sparkles className="h-4 w-4 text-[color:var(--gold)]" />
-          நீங்களும் இன்றே பலன் பெறுங்கள் — ₹249
+          நீங்களும் இன்றே பலன் பெறுங்கள் — ₹349
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </a>
         <span className="text-xs text-white/60 font-medium">2000+ திருப்திகரமான சாதகர்கள் · 4.9/5 மதிப்பீடு</span>
@@ -497,7 +497,7 @@ function CheckoutSection() {
           <div className="mb-5 flex items-center justify-between">
             <div>
               <p className="text-xs text-neutral-600 font-semibold">ஒரே முறை கட்டணம்</p>
-              <p className="text-3xl font-black text-gold">₹249</p>
+              <p className="text-3xl font-black text-gold">₹349</p>
             </div>
             <div className="rounded-full border border-[color:var(--deep-red)] bg-black/60 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-[color:var(--orange-glow)] flicker">
               Instant
@@ -509,8 +509,8 @@ function CheckoutSection() {
 
           <div className="my-5 h-px bg-neutral-200" />
           <div className="space-y-2 text-sm">
-            <div className="flex justify-between text-neutral-600"><span>கூடுதல் தொகை</span><span className="font-semibold text-neutral-900">₹249</span></div>
-            <div className="flex justify-between text-base"><span className="font-semibold text-neutral-900">மொத்தத் தொகை</span><span className="font-black text-gold">₹249</span></div>
+            <div className="flex justify-between text-neutral-600"><span>கூடுதல் தொகை</span><span className="font-semibold text-neutral-900">₹349</span></div>
+            <div className="flex justify-between text-base"><span className="font-semibold text-neutral-900">மொத்தத் தொகை</span><span className="font-black text-gold">₹349</span></div>
           </div>
 
           <a
@@ -657,7 +657,7 @@ function StickyOfferBar() {
           </p>
           <p className="text-sm font-bold text-white">
             <span className="line-through opacity-50 text-xs text-white/60">₹999</span>{" "}
-            <span className="text-gold font-extrabold">₹249</span>
+            <span className="text-gold font-extrabold">₹349</span>
           </p>
         </div>
       </div>
