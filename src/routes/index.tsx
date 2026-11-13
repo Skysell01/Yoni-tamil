@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
   component: LandingPage,
 });
 
-const CHECKOUT_URL = "https://superprofile.bio/vp/யோனி-வஷ்யகலா---ஒரு-முழுமையான-வழிகாட்டி?checkout=true";
+const CHECKOUT_URL = "https://superprofile.bio/vp/-4zWwySX?checkout=true";
 
 function LandingPage() {
   return (
