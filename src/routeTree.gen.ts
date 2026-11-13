@@ -9,61 +9,21 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as YoniVashikaranSecretsRouteImport } from './routes/yoni-vashikaran-secrets'
-import { Route as YoniVashikaranRouteImport } from './routes/yoni-vashikaran'
-import { Route as VashiRouteImport } from './routes/vashi'
-import { Route as TermsRouteImport } from './routes/terms'
-import { Route as SoulmateSketchRouteImport } from './routes/soulmate-sketch'
-import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
-import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as DigitalSignatureRouteImport } from './routes/digital-signature'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DigitalSignatureRouteImport } from './routes/digital-signature'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
+import { Route as SoulmateSketchRouteImport } from './routes/soulmate-sketch'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as VashiRouteImport } from './routes/vashi'
+import { Route as YoniVashikaranRouteImport } from './routes/yoni-vashikaran'
+import { Route as YoniVashikaranSecretsRouteImport } from './routes/yoni-vashikaran-secrets'
 
-const YoniVashikaranSecretsRoute = YoniVashikaranSecretsRouteImport.update({
-  id: '/yoni-vashikaran-secrets',
-  path: '/yoni-vashikaran-secrets',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const YoniVashikaranRoute = YoniVashikaranRouteImport.update({
-  id: '/yoni-vashikaran',
-  path: '/yoni-vashikaran',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VashiRoute = VashiRouteImport.update({
-  id: '/vashi',
-  path: '/vashi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SoulmateSketchRoute = SoulmateSketchRouteImport.update({
-  id: '/soulmate-sketch',
-  path: '/soulmate-sketch',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RefundPolicyRoute = RefundPolicyRouteImport.update({
-  id: '/refund-policy',
-  path: '/refund-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
-  id: '/privacy-policy',
-  path: '/privacy-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DigitalSignatureRoute = DigitalSignatureRouteImport.update({
-  id: '/digital-signature',
-  path: '/digital-signature',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -71,9 +31,49 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DigitalSignatureRoute = DigitalSignatureRouteImport.update({
+  id: '/digital-signature',
+  path: '/digital-signature',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundPolicyRoute = RefundPolicyRouteImport.update({
+  id: '/refund-policy',
+  path: '/refund-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SoulmateSketchRoute = SoulmateSketchRouteImport.update({
+  id: '/soulmate-sketch',
+  path: '/soulmate-sketch',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VashiRoute = VashiRouteImport.update({
+  id: '/vashi',
+  path: '/vashi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const YoniVashikaranRoute = YoniVashikaranRouteImport.update({
+  id: '/yoni-vashikaran',
+  path: '/yoni-vashikaran',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const YoniVashikaranSecretsRoute = YoniVashikaranSecretsRouteImport.update({
+  id: '/yoni-vashikaran-secrets',
+  path: '/yoni-vashikaran-secrets',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -175,67 +175,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/yoni-vashikaran-secrets': {
-      id: '/yoni-vashikaran-secrets'
-      path: '/yoni-vashikaran-secrets'
-      fullPath: '/yoni-vashikaran-secrets'
-      preLoaderRoute: typeof YoniVashikaranSecretsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/yoni-vashikaran': {
-      id: '/yoni-vashikaran'
-      path: '/yoni-vashikaran'
-      fullPath: '/yoni-vashikaran'
-      preLoaderRoute: typeof YoniVashikaranRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/vashi': {
-      id: '/vashi'
-      path: '/vashi'
-      fullPath: '/vashi'
-      preLoaderRoute: typeof VashiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/soulmate-sketch': {
-      id: '/soulmate-sketch'
-      path: '/soulmate-sketch'
-      fullPath: '/soulmate-sketch'
-      preLoaderRoute: typeof SoulmateSketchRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/refund-policy': {
-      id: '/refund-policy'
-      path: '/refund-policy'
-      fullPath: '/refund-policy'
-      preLoaderRoute: typeof RefundPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy-policy': {
-      id: '/privacy-policy'
-      path: '/privacy-policy'
-      fullPath: '/privacy-policy'
-      preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/digital-signature': {
-      id: '/digital-signature'
-      path: '/digital-signature'
-      fullPath: '/digital-signature'
-      preLoaderRoute: typeof DigitalSignatureRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -245,11 +189,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/digital-signature': {
+      id: '/digital-signature'
+      path: '/digital-signature'
+      fullPath: '/digital-signature'
+      preLoaderRoute: typeof DigitalSignatureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund-policy': {
+      id: '/refund-policy'
+      path: '/refund-policy'
+      fullPath: '/refund-policy'
+      preLoaderRoute: typeof RefundPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/soulmate-sketch': {
+      id: '/soulmate-sketch'
+      path: '/soulmate-sketch'
+      fullPath: '/soulmate-sketch'
+      preLoaderRoute: typeof SoulmateSketchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vashi': {
+      id: '/vashi'
+      path: '/vashi'
+      fullPath: '/vashi'
+      preLoaderRoute: typeof VashiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/yoni-vashikaran': {
+      id: '/yoni-vashikaran'
+      path: '/yoni-vashikaran'
+      fullPath: '/yoni-vashikaran'
+      preLoaderRoute: typeof YoniVashikaranRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/yoni-vashikaran-secrets': {
+      id: '/yoni-vashikaran-secrets'
+      path: '/yoni-vashikaran-secrets'
+      fullPath: '/yoni-vashikaran-secrets'
+      preLoaderRoute: typeof YoniVashikaranSecretsRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
